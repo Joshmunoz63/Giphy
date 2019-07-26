@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <title>Giphy</title>
+    <head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <!-- link to css -->
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Giphy API</h1>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <!-- this is where the buttons for gif categories go -->
+                        <div class="card">
+                            <div class="card-header">Add Gif Category</div>
+                            <div class="card-body">
+                                <form id="movie-form">
+                                    <label for="movie-input">Add a Gif Category</label>
+                                    <input type="text" id="gif-input">
+                                    <br>
+                                      
+                                    <!-- Button triggers new movie to be added -->
+                                    <input id="gif-movie" type="submit" value="Add a Gif">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-lg-9">
+                                <!-- this is where the buttons for gif categories go -->
+                                <div class="card">
+                                    <div class="card-header">Choose Your Gif Category</div>
+                                    <div class="card-body" id="btns">
+                                        <button data-gif="dog" class="btn btn-danger">Dogs</button>
+                                        <button data-gif="car" class="btn btn-danger">Cars</button>
+                                        <button data-gif="cat" class="btn btn-danger">Cats</button>
+                                        <button data-gif="monkey" class="btn btn-danger">Monkey</button>
+                                    </div>
+                                </div>
+                                <div id="gifs-here"></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+        <!-- link to logic -->
+        <script src="assets/logic.js"></script>
+    </body>
+</html>
